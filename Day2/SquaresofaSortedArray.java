@@ -1,9 +1,18 @@
 package Day2;
 
+import java.util.Arrays;
+
 public class SquaresofaSortedArray {
     public static void main(String[] args) {
         
     }
+    public int[] sortedSquaress(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+           nums[i]=nums[i]*nums[i];
+       }
+       Arrays.sort(nums);
+       return nums;
+   }
     public int[] sortedSquares(int[] nums) {
         if(nums == null || nums.length == 0) return null;
        int[] res = new int[nums.length];
