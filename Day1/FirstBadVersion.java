@@ -1,8 +1,31 @@
 package Day1;
 
+import java.util.PriorityQueue;
+
 public class FirstBadVersion {
     public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        pq.add(20);
+        pq.add(40);
+        System.out.println(pq); //prints [2, 4]
+        pq.add(100);
+        System.out.println(pq); // prints [1, 4, 2]
+        pq.add(322);
+        System.out.println(pq); // prints [1, 3, 2, 4]
+        pq.add(5);
+        System.out.println(pq);
+        pq.poll();
+        System.out.println(pq);
+        pq.poll();
+        System.out.println(pq);
         
+        pq.poll();
+        System.out.println(pq);
+        pq.poll();
+        System.out.println(pq);
+        
+
+    
     }
 
    
