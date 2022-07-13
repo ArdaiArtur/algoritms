@@ -6,24 +6,11 @@ public class ReversWordsinaStringIII {
     
     }
     public String reverseWords(String s) {
-        String rev="";
-        for (String st : s.split(" ")) {
-            rev=rev+strev(st);
-        }
-        return rev;
-    }
-
-    public static String strev(String s)
-    {
-        char []dd=s.toCharArray();
-        int i=0;
-        int j=s.length();
-        while(i<j)
-        {
-            char ch=dd[j];
-            dd[j]=dd[i];
-            dd[i]=ch;
-        }
-        return dd.toString();
+        String words[] = s.split(" ");
+        StringBuilder res=new StringBuilder();
+        
+        for (String word: words)
+            res.append(new StringBuffer(word).reverse().toString() + " ");
+        return res.toString().trim();
     }
 }
