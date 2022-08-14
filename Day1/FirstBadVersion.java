@@ -25,11 +25,11 @@ public class FirstBadVersion {
         System.out.println(pq);
         
 
-    
+    FirstBadVersions(5);
     }
 
    
-        public static int FirstBadVersion(int n) {
+        public static int FirstBadVersions(int n) {
            int start=0, end=n;
             while(start<end){
                 int mid = start + (end-start)/2;
