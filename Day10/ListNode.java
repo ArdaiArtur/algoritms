@@ -1,6 +1,8 @@
 package Day10;
 
+
 public class ListNode {
+       
         int val;
          ListNode next;
          ListNode() {}
