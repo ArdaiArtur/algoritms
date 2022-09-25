@@ -30,7 +30,7 @@ public class Combination {
 
     }
         public static void main(String[] args) {
-         var lists=  combine(4, 2);
+         var lists=  combine(3, 3);
             for (var man : lists) {
                 for (var s : man) {
                     System.out.print(s+" ");
